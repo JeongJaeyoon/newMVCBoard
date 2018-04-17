@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>기본 웹페이지 구성</title>
+    <!--초기화 코드-->    
+    <style>
+        * {
+            margin : 0; 
+            padding : 0;
+            font-size: 100%
+        }
+        body {
+            font-family: 'Times New Roman', serif;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            /* a태그의 밑줄 제거 */
+            text-decoration: none;
+            color: black;
+        }
+        li{
+            /*리스트 도트 제거*/
+        }
+        
+    </style>    
+            
+    <!--header code-->
+    <style>
+        #main_header {
+            width: 1000px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+                    
+        }
+        
+        #title {
+            
+            position: absolute;
+            left: 60px;
+            top: 60;
+            
+            
+        }
+        
+        #main_lnb{
+            
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            width: 1000px;
+            position: absolute;
+            margin: 0 10px;
+            bottom: 0;
+                        
+        }
+    
+        #main_lnb li{
+            
+            padding: 10px;
+            float: left;
+        }
+        
+        #search{
+            
+            border: 1px solid gray;
+            margin: 6px;
+            position: absolute;
+            right: 0;
+            border-radius: 20px 20px 20px 20px;
+            
+                        
+        }
+        
+        #search > input{
+            
+            padding: 5px;
+        }
+        
+        #search > #search_text {
+            
+            border-radius: 20px 0 0 20px;
+        }
+        
+        #search > #search_btn {
+            
+            border-radius: 0 20px 20px 0;
+        }
+    
+    </style>
+    
+    <!-- section code-->
+    <style>
+        
+        #content{
+            
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+            
+        }
+    
+        #main_section {
+            
+            width: 694px;
+            float: left;
+            
+        }
+    
+        #main_section > article{
+            
+            border-bottom: 1px solid black;
+            margin: 20px;
+            
+        }
+        
+        #main_section h1{
+            
+            margin-top: 40px;
+            margin-bottom: 10px;
+            
+        }
+        
+        #main_section p{
+            
+            margin-top: 25px;
+            margin-bottom: 25px;
+            
+        }
+    
+        
+    </style>
+    <!--aside code-->
+    <style>
+        #main_aside {
+            width: 260px;
+            float: right;
+        }
+    
+        #main_aside > div {
+            margin: 30px;
+        }
+        
+        #main_aside > div li {
+            padding-left: 15px;
+        }
+        
+    </style>
+    </head>    
+    <body>
+    
+    <header id = "main_header">
+        
+        <div id="title">
+            <h1>HTML5 Example Preview</h1>
+            <h3>한빛아카데미</h3>
+        
+        </div>
+    
+    <nav id="main_lnb">
+        <ul>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">JavaScript</a></li>
+            
+        </ul>
+        
+    <nav id="search">
+        <input id="search_text" type="text" size="15">
+        <input id="search_btn" type="submit" value="검색">
+        
+        
+        </nav>    
+            
+        </nav>
+            
+    </header>
+    
+    <div id="content">
+        
+        <section id="main_section">
+            <article id="main_article1">
+            <h1>HTML5 개요와 활동</h1>
+            <h5>2013년 2월 14일</h5>    
+            <img src="pp.gif"  width="430" height="280">
+                <p>
+              [OSEN=이상학 기자] 한국프로야구선수협회가 오재원의 심판의 질의에 대한 퇴장 명련 관련 KBO의 대처에 유감을 표했다.
+
+                    선수협은 5일 '심판에 대한 질의를 이유로 퇴장명령에 대한 선수협 의견'이란 제목으로 보도자료를 내고 '지난 3일 잠실 두산-LG전 경기에서 심판에 대한 질의를 이유로 선수(오재원)가 퇴장 명령을 받은 사실과 관련하여 KBO의 대처와 발표 내용에 유감을 표시한다'고 밝혔다. </p>
+<p>
+오재원은 지난 3일 잠실 LG전에서 9회말 루킹 삼진을 당한 뒤 구심을 맡은 박종철 심판위원에게 스트라이크 판정에 불만을 표시하다 퇴장 당했다. 이튿날 KBO는 '오재원의 항의는 룰에 대한 부분이 아니다. 선수가 볼 판정에 대해 심판에게 물어봐선 안 된다. 박종철 구심이 1차적으로 주의를 줬지만 선수가 다시 항의성으로 또 따져 물었다. 퇴장 사항이 맞다"고 밝힌 바 있다.
+                </p>
+            
+                
+                
+                
+            
+            </article>
+        
+            <article id="main_article2">
+            <h1>HTML5 응용과 실습</h1>
+            <h5>2013년 2월 17일</h5>
+            <img src="oh.jpg" width="430" height="280">
+                <p>
+            선수협은 계속해서 '심판위원에게 인사 금지라는 내용은 이미 선수들에게 전지훈련 때부터 공지된 사항이라 어느 정도 인식하고 있었지만 질의 금지 지침은 선수들에게 제대로 공지가 되지 않은 상황이었고, 개막이 가까와져서야 통보됐다. 선수협은 야구규칙을 지키는 것과 심판위원들의 판정은 존중 받아야 된다고 생각하지만 이번 논란이 된 판정의 근거가 된 행동지침의 의사결정 방식과 근거에는 문제가 있다고 판단한다'고 지적했다.</p>
+            <p>
+            아울러 선수협은 '심판위원회와 KBO의 판정에 관한 규정은 매우 중대한 내용이고, 경기에 영향을 미치는 내용이기 때문에 사전공지와 의견 취합이 매우 중요하다. 하지만 행동지침은 사전에 충분히 논의되고 선수, 코칭스태프의 의견을 취합하여 결정할 사항인데 이러한 과정이 충분히 이루어지지 않은 채 고지되었다는 점이 이번 논란을 가져왔다고 판단한다'고 강조했다.         
+                    
+            </p>
+            
+    
+            
+        </article>
+        </section>
+        
+        <aside id = "main_aside">
+            <div id="kategorie">
+                <h2>카테고리</h2>
+                <ul>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                </ul>
+                    
+            </div>
+        
+            <div id="newPosts">
+                <ul>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                    <li>데이터</li>
+                
+                </ul>
+                    
+            </div>
+        
+        </aside>
+        
+        
+        
+        </div>    
+        
+    
+    
+    </body>
+    
